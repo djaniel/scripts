@@ -1,0 +1,5 @@
+
+alias ctrlc='xclip -selection clipboard'
+alias ipa='ip -c -4 -br a'
+alias ls='lsd'
+alias sb='source ~/.bashrc'
