@@ -15,9 +15,10 @@ curl -fsS https://dl.brave.com/install.sh | sh
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 cargo install lsd
 # because we need serial access
-sudo usermod -aG dialout ${USER
+sudo usermod -aG dialout ${USER}
 
-git config --global alias.adog "log --all --decorate --oneline --graph"	
+# basic shortcuts
+git config --global alias.adog "log --all --decorate --oneline --graph"
 ln -s "$PWD/my_alias" "$HOME/.bash_aliases"
-
-
+mkdir "$HOME/.config/firejail/"
+mkdir -p $HOME/.local/bin
